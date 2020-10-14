@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+    <tr>
+        <th><a target="_blank" href="https://drive.google.com/file/d/1ax5idvWxUNj6VEhz0Ail79w8tMQ1PCyr/view?usp=sharing">Opinion acerca de las imagenes</a></th>
+        <th><a href="https://drive.google.com/uc?export=download&id=1ax5idvWxUNj6VEhz0Ail79w8tMQ1PCyr" class='btn btn-primary btn-sm'><i class="fas fa-download"></i></a></th>
+    </tr>
+    <tr>
+        <th><a href="{% url 'unidad:biografia' %}">Biografia Andy J. Arciniega</a></th>
+        <th><a href="https://drive.google.com/uc?export=download&id=19JWh5-CZicA3_51hU3XOQjdlzafI-o9X" class='btn btn-primary btn-sm'><i class="fas fa-download"></i></a></th>
+    </tr>
+    <tr>
+        <th><a href="">100 etiquetas de html5</a></th>
+        <th><a href="#" class='btn btn-primary btn-sm'><i class="fas fa-download"></i></a></th>
+    </tr>
+{% endblock %}

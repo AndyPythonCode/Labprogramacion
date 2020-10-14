@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block titulo %}
+        Biografia
+    {% endblock %}
+    {% block head %}
+        <link rel="stylesheet" href="{% static 'biografia/css/style.css' %}">
+    {% endblock %}
+
+{% block pantilla %}
+    <h1>Bibliografía</h1>
+
+    <section>
+        <h3><em>Andy Arciniega</em></h3>
+        <article>
+            <p>Nací es Santo Domingo el 24 de junio del año 2000, son mis padres la Lic. en psicología, Andrea Santiago
+                y el Ing. en electrónica Francisco Arciniega. Me inscribieron a la edad de 2 años en el colegio José
+                Marthin de Bayona, realize mis estudios secundarios en el Liceo Experimental Altagracia Amelia Ricart
+                Calventi que pertenece a la Universidad Autonoma de Santo Domingo (UASD), de ahí pasé al área
+                universitaria a estudiar en la carrera que actualmente estoy, Lic en Informática.</p>
+            <p>Me gradué de Ingles por inmersion en la misma universidad con el apoyo del Ministerio de Educacion
+                Superior Ciencia y Tecnologia MESCYT en el año 2017. Con el fin de ampliar los conocimientos en mi
+                carrera estoy realizando un curso de python avanzado en el Instituto Tecnologico de Las Americas ITLA.
+                Soy un gran apasionado del baloncesto y la música.</p>
+        </article>
+    </section>
+    <hr>
+    <img class="foto" src="{% static 'biografia/img/FOTO.png' %}" alt="mi foto">
+
+    <div class="datos">
+        <strong>Nombre</strong>
+
+        <p>Andy Juan Arciniega Santiago</p>
+
+        <strong>Edad</strong>
+
+        <p>20 Años</p>
+
+        <strong>Nacionalidad</strong>
+
+        <p>Dominicano</p>
+    </div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <td>Horario</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+                <td>Sabado</td>
+            </tr>
+            <tr>
+                <th>7am</th>
+                <th>-</th>
+                <th>-</th>
+                <th>Lab Lenguaje de Program III</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>11am</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>Análisis y Diseño de Sistema</th>
+            </tr>
+            <tr>
+                <th>12pm</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>Análisis y Diseño de Sistema</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>5pm</th>
+                <th>-</th>
+                <th>-</th>
+                <th>Redes De Proc De Datos</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>6pm</th>
+                <th>Algoritmos Computacionales</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>7pm</th>
+                <th>-</th>
+                <th>Base de Datos II</th>
+                <th>-</th>
+                <th>Base de Datos II</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>8pm</th>
+                <th>Redes De Proc De Datos</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+            </tr>
+        </table>
+    </div>
+{% endblock %}
