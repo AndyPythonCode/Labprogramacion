@@ -1,0 +1,808 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}
+100 Etiquetas
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'etiqueta/etiqueta.css' %}">
+{% endblock %}
+
+{% block plantilla %}
+<h1>100 Etiquetas de HTML5</h1>
+
+<div class="contenedor">
+    <section>
+        <table id="etiquetas">
+            <thead>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripcion breve</th>
+                    <th>Ejemplos en la web https://www.htmlquick.com/</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <h4>Elemento raíz</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &lt;html&gt; </td>
+                    <td>Define que el documento esta bajo el estandar de HTML 5</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/html.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;!doctype html&gt;</td>
+                    <td>Define que el documento esta bajo el estandar de HTML 5</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/html.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Metadatos del documento</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones
+                        de, scripts y hojas de estilo.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/head.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Define el título del documento, el cual se muestra en la barra de título del navegador o en las
+                        pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será
+                        interpretada.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/title.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;base&gt;</td>
+                    <td>Define la URL base para las URLs relativas en la página.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/base.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Usada para enlazar JavaScript y CSS externos con el documento HTML actual.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/link.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Define los metadatos que no pueden ser definidos usando otro elemento HTML.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/meta.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;style&gt;</td>
+                    <td>Etiqueta de estilo usada para escribir CSS en línea.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/style.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Scripting</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;script&gt;</td>
+                    <td>Define ya sea un script interno o un enlace hacia un script externo. El lenguaje de programación
+                        es JavaScript</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/script.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;noscript&gt;</td>
+                    <td>Define un contenido alternativo a mostrar cuando el navegador no soporta scripting.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/noscript.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Secciones</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Representa el contenido principal de un documento HTML. Solo hay un elemento &lt;body&gt; en un
+                        documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/body.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Define una sección en un documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/section.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Define una sección que solamente contiene enlaces de navegación</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/nav.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Define contenido autónomo que podría existir independientemente del resto del contenido.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/article.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es
+                        removido, el contenido restante seguirá teniendo sentido</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/aside.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Encabezado de nivel 1</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h1.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h2&gt;</td>
+                    <td>Encabezado de nivel 2</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h2.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h4&gt;</td>
+                    <td>Encabezado de nivel 3</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h4.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h4&gt;</td>
+                    <td>Encabezado de nivel 4</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h4.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h5&gt;</td>
+                    <td>Encabezado de nivel 5</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h5.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h6&gt;</td>
+                    <td>Encabezado de nivel 6</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/h6.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio
+                        Web y una tabla de navegación de contenidos.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/header.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría,
+                        algunos enlaces a información legal o direcciones para dar información de retroalimentación.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/footer.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Define una sección que contiene información de contacto.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/address.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Define el contenido principal o importante en el documento. Solamente existe un elemento <main>
+                            en el documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/main.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;hgroup&gt;</td>
+                    <td>Agrupa encabezados consecutivos</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/hgroup.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Agrupación de contenido</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Define una parte que debe mostrarse como un párrafo.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/p.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Representa un quiebre temático entre párrafos de una sección o articulo o cualquier contenido.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/hr.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Indica que su contenido esta preformateado y que este formato debe ser preservado.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/pre.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Representa un contenido citado desde otra fuente.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/blockquote.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Define una lista ordenada de artículos.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/ol.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Define una lista de artículos sin orden.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/ul.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Define un artículo de una lista enumerada.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/li.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/dl.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Representa un término definido por el siguiente &lt;dd&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/dt.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Representa la definición de los términos listados antes que él.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/dd.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Representa una figura ilustrada como parte del documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/figure.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Representa la leyenda de una figura.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/figcaption.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Representa un contenedor genérico sin ningún significado especial.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/div.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Semántica a nivel de Texto</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Representa un hiperenlace, enlazando a otro recurso.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/a.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Representa un texto enfatizado, como un acento de intensidad.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/em.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Representa un texto especialmente importante.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/strong.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Representa un comentario aparte, es decir, textos como un descargo de responsabilidad o una nota
+                        de derechos de autoría, que no son esenciales para la comprensión del documento</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/small.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;s&gt;</td>
+                    <td>Representa contenido que ya no es exacto o relevante.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/s.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Representa el título de una obra.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/cite.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Representa una cita textual inline.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/q.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Representa un término cuya definición está contenida en su contenido ancestro más próximo.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/dfn.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Representa una abreviación o un acrónimo ; la expansión de la abreviatura puede ser representada
+                        por el atributo <small>title.</small></td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/abbr.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;data&gt;</td>
+                    <td>Asocia un equivalente legible por máquina a sus contenidos. (Este elemento está sólamente en la
+                        versión de la WHATWG del estandar HTML, y no en la versión de la W3C de HTML5).</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/data.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Representa un valor de fecha y hora; el equivalente legible por máquina puede ser representado
+                        en el atributo <small>datetime.</small></td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/time.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Representa un código de ordenador.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/code.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;var&gt;</td>
+                    <td>Representa a una variable, es decir, una expresión matemática o contexto de programación, un
+                        identificador que represente a una constante, un símbolo que identifica una cantidad física, un
+                        parámetro de una función o un marcador de posición en prosa.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/var.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;samp&gt;</td>
+                    <td>Representa la salida de un programa o un ordenador.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/samp.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Representa la entrada de usuario, por lo general desde un teclado, pero no necesariamente, este
+                        puede representar otras formas de entrada de usuario, como comandos de voz transcritos.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/kbd.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Representan un subíndice</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/sub.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Representan un superindice</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/sup.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Representa un texto en una voz o estado de ánimo alterno, o por lo menos de diferente calidad,
+                        como una designación taxonómica, un término técnico, una frase idiomática, un pensamiento o el
+                        nombre de un barco.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/i.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Representa un texto hacia el cual se llama la atención para propósitos utilitarios. No confiere
+                        ninguna importancia adicional y no implica una voz alterna.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/b.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;u&gt;</td>
+                    <td>Representa una anotación no textual sin-articular, como etiquetar un texto como mal escrito o
+                        etiquetar un nombre propio en texto en chino.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/u.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Representa texto resaltado con propósitos de referencia, es decir por su relevancia en otro
+                        contexto.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/mark.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;ruby&gt;</td>
+                    <td>Representa contenidos a ser marcados con anotaciones ruby, recorridos cortos de texto
+                        presentados junto al texto. Estos son utilizados con regularidad en conjunto a lenguajes de Asia
+                        del Este, donde las anotaciones actúan como una guía para la pronunciación, como el furigana
+                        japonés.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/ruby.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;rt&gt;</td>
+                    <td>Representa el texto de una anotación ruby.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/rt.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;rp&gt;</td>
+                    <td>Representa los paréntesis alrededor de una anotación ruby, usada para mostrar la anotación de
+                        manera alterna por los navegadores que no soporten despliegue estandar para las anotaciones.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/rp.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;bdi&gt;</td>
+                    <td>Representa un texto que debe ser aislado de sus alrededores para el formateado bidireccional del
+                        texto. Permite incrustar un fragmento de texto con una direccionalidad diferente o desconocida.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/bdi.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Representa la direccionalidad de sus descendientes con el fin de anular de forma explícita al
+                        algoritmo bidireccional Unicode.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/bdo.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td> Representa texto sin un significado específico. Este debe ser usado cuando ningún otro elemento
+                        semántico le confiere un significado adecuado, en cuyo caso, provendrá de atributos globales
+                        como <small>class, lang, o dir.</small> </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/span.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Representa un salto de línea.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/br.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;wbr&gt;</td>
+                    <td>Representa una oportunidad de salto de línea, es decir, un punto sugerido de envoltura donde el
+                        texto de múltiples líneas puede ser dividido para mejorar su legibilidad.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/wbr.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Ediciones</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Define una adición en el documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/ins.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Define una remoción del documento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/del.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Contenido incrustado</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Representa una imagen.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/img.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Representa un contexto anidado de navegación, es decir, un documento HTML embebido.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/iframe.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Representa un punto de integración para una aplicación o contenido interactivo externo que por
+                        lo general no es HTML.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/embed.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Representa un recurso externo, que será tratado como una imagen, un sub-documento HTML o un
+                        recurso externo a ser procesado por un plugin.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/object.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;param&gt;</td>
+                    <td>Define parámetros para el uso por los plugins invocados por los elementos &lt;object&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/param.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Representa un video, y sus archivos de audio y capciones asociadas, con la interfaz necesaria
+                        para reproducirlos. </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/video.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Representa un sonido o stream de audio.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/audio.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;source&gt;</td>
+                    <td>Permite a autores especificar recursos multimedia alternativos para los elementos multimedia
+                        como &lt;video&gt; o &lt;audio&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/source.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;track&gt;</td>
+                    <td>Permite a autores especificar una pista de texto temporizado para elementos multimedia como
+                        &lt;video&gt; o &lt;audio&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/track.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Representa un área de mapa de bits en el que se pueden utilizar scripts para renderizar gráficos
+                        como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/canvas.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>En conjunto con &lt;area&gt;, define un mapa de imagen.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/map.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>En conjunto con &lt;map&gt;, define un mapa de imagen.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/area.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;svg&gt;</td>
+                    <td>Define una imagen vectorial embebida.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/svg.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;math&gt;</td>
+                    <td>Define una fórmula matemática.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/math.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Datos tabulares</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Representa datos con más de una dimensión.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/table.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Representa el título de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/caption.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Representa un conjunto de una o más columnas de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/colgroup.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Representa una columna de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/col.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Representa el bloque de filas que describen los datos concretos de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/tbody.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Representa el bloque de filas que describen las etiquetas de columna de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/thead.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Representa los bloques de filas que describen los resúmenes de columna de una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/tfoot.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Representa una fila de celdas en una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/tr.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Representa una celda de datos en una tabla.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/td.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Representa una celda encabezado en una tabla. </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/td.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Formulario</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Representa un formulario, consistiendo de controles que puede ser enviado a un servidor para
+                        procesamiento.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/form.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;filedset&gt;</td>
+                    <td>Representa un conjunto de controles.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/filedset.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>Representa el título de un &lt;fieldset&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/legend.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Representa el título de un control de formulario.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/label.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Representa un campo de datos escrito que permite al usuario editar los datos.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/input.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Representa un botón.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/button.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Representa un control que permite la selección entre un conjunto de opciones.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/select.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>Representa un conjunto de opciones predefinidas para otros controles.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/datalist.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Representa un conjunto de opciones, agrupadas lógicamente.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/optgroup.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Representa una opción en un elemento &lt;select&gt;, o una sugerencia de un elemento
+                        &lt;datalist&gt;.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/option.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Representa un control de edición de texto multilínea.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/textarea.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;keygen&gt;</td>
+                    <td>Representa un control de par generador de llaves.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/keygen.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;output&gt;</td>
+                    <td>Representa el resultado de un cálculo.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/output.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>Representa el progreso de finalización de una tarea.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/progress.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>Representa la medida escalar (o el valor fraccionario) dentro de un rango conocido.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/meter.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4>Elementos interactivos</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Representa un widget desde el que un usuario puede obtener información o controles adicionales.
+                    </td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/details.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Representa un resumen, título o leyenda para un elemento &lt;details> dado.;
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/summary.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;command&gt;</td>
+                    <td>Representa un comando que un usuario puede invocar.</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/command.html#examples">Ejemplo</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;menu&gt;</td>
+                    <td>Representa una lista de comandos .</td>
+                    <td><a target="_blank"
+                            href="https://www.htmlquick.com/es/reference/tags/menu.html#examples">Ejemplo</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock %}

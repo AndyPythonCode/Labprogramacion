@@ -6,3 +6,6 @@ def biografia(request):
 
 def base(request):
     return render(request, 'index.html')
+
+def etiqueta(request):
+    return render(request, 'cien_etiquetas.html')
