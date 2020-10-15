@@ -1,0 +1,25 @@
+.foto {
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 55%;
+}
+
+.datos, h1 {
+    text-align: center;
+}
+
+section{
+    text-align: justify;
+    margin: 3% 25% 3% 25%;
+}
+
+hr {
+    width: 50%;
+}
+
+table,th, td {
+    margin: 3% 15% 5% 15%;
+    text-align: center;
+    border: 1px solid black;
+}
