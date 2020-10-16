@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block titulo %}
+Banreservas
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'banreservas/style.css' %}">
+{% endblock %}
+
+{% block plantilla%}
+    <h1>Asignación del menu</h1>
+    <!--Menu-->
+    <div class="contenedor">
+        <!--Contenedor-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Cuentas</a>
+                    <div class="sub-menu">
+                        <!--Sub Menu-->
+                        <div class="columna">
+                            <!--Columna-->
+                            <div class="categoria">
+                                <!--Categoria-->
+                                <h3>Ahorros</h3>
+                                <ul><a href="#">Cuenta de ahorro en Pesos</a></ul>
+                                <ul><a href="#">Cuenta Ahorra Más</a></ul>
+                                <ul><a href="#">Cuenta de Ahorro Infantil</a></ul>
+                                <ul><a href="#">Cuenta de Ahorro Preserva</a></ul>
+                                <ul><a href="#">Cuenta de Ahorro Preserva</a></ul>
+                                <ul><a href="#">Cuenta de Ahorro en Dólares</a></ul>
+                                <ul><a href="#">Cuenta de Ahorro en Euros</a></ul>
+                                <!--Categoria-->
+                            </div>
+                            <!--button-->
+                            <div class="button">
+                                <a href="#">Ver todos</a>
+                            </div>
+                            <!--button-->
+                        </div>
+                        <!--Columna-->
+                        <div class="columna">
+                            <!--Columna-->
+                            <div class="categoria">
+                                <!--Categoria-->
+                                <h3>Corrientes</h3>
+                                <ul><a href="#">Cuenta Corriente Personal</a></ul>
+                                <ul><a href="#">Cuenta Corriente Más Personal</a></ul>
+                                <!--Categoria-->
+                            </div>
+                            <!--button-->
+                            <div class="button2">
+                                <a href="#">Ver todos</a>
+                            </div>
+                            <!--button-->
+                        </div>
+                    </div>
+                    <!--Sub Menu-->
+                </li>
+                <li><a href="#">Inversiones</a>
+                
+                    <div class="sub-menu">
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Certificados</h3>
+                                    <ul><a href="#">Certificados Financieros en pesos</a></ul>
+                                    <ul><a href="#">Deposito a Plazo en dolares y euros</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Mercado de valores</h3>
+                                    <ul><a href="#">Inversiones en Títulos-Valores</a></ul>
+                                    <ul><a href="#">Fondo de Inversión</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Targetas</a>
+                
+                    <div class="sub-menu">
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Débito</h3>
+                                    <ul><a href="#">Mastercard Débito Standard</a></ul>
+                                    <ul><a href="#">Mastercard Débito Gold</a></ul>
+                                    <ul><a href="#">Mastercard Débito Platinum</a></ul>
+                                    <ul><a href="#">Mastercard Débito Dólares</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Crédito</h3>
+                                    <ul><a href="#">Visa y Mastercard Clásica</a></ul>
+                                    <ul><a href="#">Visa y Mastercard Gold</a></ul>
+                                    <ul><a href="#">Visa Paltinum Universe</a></ul>
+                                    <ul><a href="#">Visa y Mastercard Platinum</a></ul>
+                                    <ul><a href="#">Mastercard Platinum</a></ul>
+                                    <ul><a href="#">Visa Infinite</a></ul>
+                                    <ul><a href="#">Visa Flotilla Personal</a></ul>
+                                    <ul><a href="#">Visa Credimás Banreservas</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Articulo de Interes</h3>
+                                    <div class="imagen">
+                                        <img src="https://www.banreservas.com/sites/default/files/menuimage/13943.jpg" alt="Articulo">
+                                        <a href="#">Guía de beneficio</a>
+                                    </div>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </li>
+                <li><a href="#">Préstamos</a>
+                
+                    <div class="sub-menu">
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Personales</h3>
+                                    <ul><a href="#">Préstamos de Consumo</a></ul>
+                                    <ul><a href="#">Vacaciones Felices</a></ul>
+                                    <ul><a href="#">Educación y Cultura</a></ul>
+                                    <ul><a href="#">Empleado Feliz</a></ul>
+                                    <ul><a href="#">Sueldo Más</a></ul>
+                                    <ul><a href="#">Pensionado Feliz</a></ul>
+                                    <ul><a href="#">Préstamos en Dolares</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Hipotecarios</h3>
+                                    <ul><a href="#">Préstamos Hipotecarios</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Vehiculos</h3>
+                                    <ul><a href="#">Préstamos Vehículos Nuevos</a></ul>
+                                    <ul><a href="#">Préstamos Vehículos Usados</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </li>
+                <li><a href="#">Seguros</a>
+                    <div class="sub-menu">
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Seguros de personas</h3>
+                                    <ul><a href="#">Vida Reservas</a></ul>
+                                    <ul><a href="#">Viajes Reservas</a></ul>
+                                    <ul><a href="#">Asistencia Funeraria</a></ul>
+                                    <ul><a href="#">Accidentes Personales</a></ul>
+                                    <ul><a href="#">Vida Individual en Pesos y Dólares</a></ul>
+                                    <ul><a href="#">Seguro Médico Internacional Blueline</a></ul>
+                                    <ul><a href="#">Aero Ambulancia</a></ul>
+                                    <ul><a href="#">Visual Max</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="categoria">
+                                    <h3>Riesgos generales</h3>
+                                    <ul><a href="#">Vivienda Segura</a></ul>
+                                    <ul><a href="#">Vehículos de Motor</a></ul>
+                                    <ul><a href="#">Paln De prisa</a></ul>
+                                <div class="button">
+                                    <a href="#">Ver todos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Remesas, Impuestos y Servicios</a></li>
+            </ul>
+        </nav>
+        <!--Contenedor-->
+    </div>
+    <!--Menu-->
+{% endblock %}

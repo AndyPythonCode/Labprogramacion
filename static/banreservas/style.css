@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); 
+/*Letra a utilizar*/
+
+/*Sacar los que trae por defecto*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ededed;
+}
+
+/*Centrar titulo*/
+h1 {
+    text-align: center;
+}
+
+/*Para tener un contenedor*/
+.contenedor {
+    max-width: 100%;
+}
+
+/*color*/
+.menu {
+    background-color: rgb(0, 174, 240);
+}
+
+/*Ciertas caracteristicas*/
+.menu ul {
+    margin: 0;
+    padding: 1px;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+
+/*de manera horizontal*/
+.menu li {
+    margin-left: -4px;
+    border-right: 1px solid #fff;
+    display: inline-block;
+}
+
+/*el primer elemento del li*/
+.menu li:first-child {
+    border-left: 1px solid #fff;
+}
+
+/*Que funciones como bloque y de más*/
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 14px 28px;
+}
+
+/*el evento del mouse*/
+.menu a:hover {
+    background: #fff;
+    color: rgb(0, 174, 240);
+}
+
+/*Caracteristicas de los diferentes sub-menu*/
+.sub-menu {
+    position: absolute;
+    width: 55%;
+    background-color: #fff;
+    display: none;
+    padding: 2em;
+}
+
+/*color de letra*/
+.sub-menu a {
+    color: #000;
+    padding: 8px;
+}
+
+/*cuando pase el mouse quiero mi menu*/
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+/*poner a la izquierda*/
+.sub-menu h3 {
+    color:  rgb(0, 174, 240);
+    text-align: left;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/*Organizar todo para trabajar con categoria*/
+.sub-menu a {
+    text-align: left;
+    padding: 0;
+    font-size: 12px;
+    padding-bottom: .40em;
+}
+
+/*evento mouse*/
+.sub-menu a:hover {
+    color: orange;
+}
+
+/*button estilo outline de bootstrap*/
+.button a {
+    border: 1px solid orange;
+    width: 115px;
+    height: 10px;
+    background: #fff;
+    padding: 7px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+/*button estilo outline de bootstrap con espacios*/
+.button2 a {
+    border: 1px solid orange;
+    width: 115px;
+    height: 10px;
+    background: #fff;
+    padding: 7px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin-top: 51%;
+}
+
+/*evento mouse*/
+.button a:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/*Se situe al lado*/
+.columna {
+    float: left;
+}
+
+/*el espacio entre los dos*/
+.columna {
+    width: 30%;
+}
+
+.main-footer {
+    margin-top: 50%;
+}

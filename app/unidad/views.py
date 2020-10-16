@@ -9,3 +9,6 @@ def base(request):
 
 def etiqueta(request):
     return render(request, 'cien_etiquetas.html')
+
+def banreservas(request):
+    return render(request, 'banreservas.html')
