@@ -12,3 +12,6 @@ def etiqueta(request):
 
 def banreservas(request):
     return render(request, 'banreservas.html')
+
+def cedula(request):
+    return render(request, 'cedula.html')

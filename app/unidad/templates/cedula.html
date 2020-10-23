@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo%}
+    Cedula Dominicana
+{% endblock %}
+
+{% block plantilla %}
+<div class="content-wrapper">
+    <div class="container">
+        <h1 class="text-center text-primary">Cedula Dominicana</h1>
+            <div class="card card-default mt-5">
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <h2 class="text-center text-primary" id="cedula"></h2>
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script%}
+    <script src="{% static 'cedula/cedula.js' %}"></script>
+{% endblock %}
