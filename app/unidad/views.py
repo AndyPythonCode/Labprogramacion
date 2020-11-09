@@ -1,3 +1,4 @@
+from django.http import request
 from django.shortcuts import render
 
 # Create your views here.
@@ -15,3 +16,6 @@ def banreservas(request):
 
 def cedula(request):
     return render(request, 'cedula.html')
+
+def menuDinamico(request):
+    return render(request, "menuDinamico.html")

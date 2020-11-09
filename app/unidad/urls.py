@@ -9,4 +9,5 @@ urlpatterns = [
     path('etiquetas/', views.etiqueta, name='etiqueta'),
     path('banreservas/', views.banreservas, name='banco'),
     path('cedula/',views.cedula, name="cedula"),
+    path('menu/',views.menuDinamico, name="menu"),
 ]
