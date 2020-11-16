@@ -10,4 +10,5 @@ urlpatterns = [
     path('banreservas/', views.banreservas, name='banco'),
     path('cedula/',views.cedula, name="cedula"),
     path('menu/',views.menuDinamico, name="menu"),
+    path('codigoQR', views.codigoQR, name="qr"),
 ]

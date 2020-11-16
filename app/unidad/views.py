@@ -19,3 +19,6 @@ def cedula(request):
 
 def menuDinamico(request):
     return render(request, "menuDinamico.html")
+
+def codigoQR(request):
+    return render(request, "codigoQR.html")

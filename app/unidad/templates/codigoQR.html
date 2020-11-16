@@ -1,0 +1,42 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo QR</title>
+    <link rel="stylesheet" href="{% static 'codigoQR/style.css'%}">
+</head>
+<body>
+    <div class="contenedor">
+    <form id="form">
+        <h1>Formulario</h1>
+        <label>Nombre completo:<input id="nombre" placeholder="Nombre" autocomplete="off" type="text"></label>
+        <span id="nombre-text"></span>
+
+        <label>Empresa donde labora:<input id="empresa" placeholder="Empresa" autocomplete="off" type="text"></label>
+        <span id="empresa-text"></span>
+
+        <label>Cargo:<input id="cargo" placeholder="Cargo" autocomplete="off" type="text"></label>
+        <span id="cargo-text"></span>
+
+        <label>Teléfono móvil:<input id="telefonoM" placeholder="Teléfono Móvil" autocomplete="off" type="text"></label>
+        <span id="telfMovil-text"></span>
+
+        <label>Teléfono hogar:<input id="telefonoH" placeholder="Teléfono del Hogar (Opcional)" autocomplete="off" type="text"></label>
+
+        <label>Correo electrónico institucional:<input id="correoI" placeholder="Correo" autocomplete="off" type="text"></label>
+        <span id="correo-text"></span>
+
+        <label>Correo electrónico de la institución donde labora:<input id="correoL" placeholder="Correo (Opcional)" autocomplete="off" type="text"></label>
+
+        <button class="generador">Generador</button>
+    </form>
+    <span id="creado"></span>
+    <div class="contenedorQR">
+        <img src="{% static 'codigoQR/default.png'%}" alt="QR generador">
+    </div>
+    </div>
+    <script src="{% static 'codigoQR/script.js'%}"></script>
+</body>
+</html>
