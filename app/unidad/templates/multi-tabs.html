@@ -1,0 +1,168 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Con Taps</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'tabs/style.css'%}">
+</head>
+<body onload="mostrarTab(0)">
+    <h1 class="display-4 text-center">Formulario Tabs</h1>
+
+    <form id="formulario">
+        <div class="container">
+            <!--Titulo de los tabs-->
+            <div class="tabOpcion">
+                <button onclick="return mostrarTab(0)">Datos Personales</button>
+                <button onclick="return mostrarTab(1)">Familiares</button>
+                <button onclick="return mostrarTab(2)">Condiciones Pre-existente</button>
+                <button onclick="return mostrarTab(3)">Internamientos Realizados</button>
+            </div>
+
+            <!--Datos Personales-->
+            <div class="tabContenido form-group paciente">
+                <div class="row">
+                    <div class="col">
+                        <input id="nombre" oninput="valida('.paciente input')" class="form-control" placeholder="Nombre Paciente" type="text">
+                    </div>
+                    <div class="col">
+                        <input id="apellido" oninput="valida('.paciente input')" class="form-control" placeholder="Apellido Paciente" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <input id="edad" oninput="valida('.paciente input')" class="form-control" placeholder="Edad" type="number">
+                    </div>
+                    <div class="col-2">
+                        <input id="nacionalidad" oninput="valida('.paciente input')" class="form-control" placeholder="Nacionalidad" type="text">
+                    </div>
+                    <div class="col-4">
+                        <input id="cedula" oninput="valida('.paciente input')" class="form-control" placeholder="Cedula" type="text">
+                    </div>
+                    <div class="col-4">
+                        <input id="telefono" oninput="valida('.paciente input')" class="form-control" placeholder="Telefono" type="text">
+                    </div>
+                </div>       
+            </div>
+
+            <!--Familiares-->
+            <div class="tabContenido form-group">
+                <div class="row familiar">
+                    <div class="col-3">
+                        <input class="form-control" placeholder="Nombre del Familiar" type="text">
+                    </div>
+                    <div class="col-2">
+                        <input class="form-control" placeholder="Apellido" type="text">
+                    </div>
+                    <div class="col-2">
+                        <input class="form-control" placeholder="Edad" type="number">
+                    </div>
+                    <div class="col-2">
+                        <input class="form-control" placeholder="Parentesco" type="text">
+                    </div>
+                    <div class="col-3">
+                        <div class="mt-3 d-inline-block">
+                            <div onclick="agregar('.familiar input','lista-dinamica-1','f')" class="btn btn-primary">Agregar</div>
+                            <div onclick="borrar('lista-dinamica-1','f')" class="btn btn-danger">Eliminar</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dinamica-->
+                <div class="row">
+                    <div class="col">
+                        <ol id="lista-dinamica-1"></ol>
+                    </div>
+                </div>
+            </div>
+
+            <!--Condiciones Pre-existente de Salud-->
+            <div class="tabContenido form-group">
+                <div class="row condicion">
+                    <div class="col-5">
+                        <input class="form-control" placeholder="Enfermeda" type="text">
+                    </div>
+                    <div class="col-4 d-inline">
+                        <input placeholder="Tiempo con la enfermedad" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    <div class="col-3">
+                        <div class="mt-3 d-inline-block">
+                            <div onclick="agregar('.condicion input','lista-dinamica-2','c')" class="btn btn-primary">Agregar</div>
+                            <div onclick="borrar('lista-dinamica-2','c')" class="btn btn-danger">Eliminar</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dinamica-->
+                <div class="row">
+                    <div class="col">
+                        <ol id="lista-dinamica-2"></ol>
+                    </div>
+                </div>
+            </div>
+
+            <!--Internamientos Realizados-->
+            <div class="tabContenido form-group">
+                <div class="row internamientos">
+                    <div class="col-3">
+                        <input class="form-control" placeholder="Fecha" type="text" onfocus="this.type='date'" onblur="(this.type='text')">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" placeholder="Centro Medico" type="text">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" placeholder="Diagnóstico" type="text">
+                    </div>
+                    <div class="col-3">
+                        <div class="mt-3 d-inline-block">
+                            <div onclick="agregar('.internamientos input','lista-dinamica-3','i')" class="btn btn-primary">Agregar</div>
+                            <div onclick="borrar('lista-dinamica-3','i')" class="btn btn-danger">Eliminar</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dinamica-->
+                <div class="row">
+                    <div class="col">
+                        <ol id="lista-dinamica-3"></ol>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary" type="submit">Enviar</button>
+            </div>
+            <p id="error"></p>
+        </div>
+
+        <!-- Ubicacion -->
+        <div id="ubicacion">
+            <span class="guia"></span>
+            <span class="guia"></span>
+            <span class="guia"></span>
+            <span class="guia"></span>
+        </div>
+    </form>
+
+    <div class="container text-center">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Nacionalidad</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Familiares</th>
+                <th scope="col">Condiciones</th>
+                <th scope="col">Internados</th>
+              </tr>
+            </thead>
+            <tbody id="tablaDinamica">
+
+            </tbody>
+          </table>
+    </div>
+    
+    <script src="{% static 'tabs/script.js'%}"></script>
+</body>
+</html>

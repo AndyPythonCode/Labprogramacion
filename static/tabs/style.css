@@ -1,0 +1,63 @@
+body {
+    padding: 40px;
+}
+
+#formulario {
+    padding: 2%;
+    margin: 0.5rem 4rem;
+}
+
+.container .tabOpcion button {
+    width: 25%;
+    padding: 0.5rem;
+    float: left;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(53, 53, 209);
+}
+
+.container .tabOpcion button:hover {
+    background-color: rgb(82, 82, 230);
+    color: black;
+}
+
+.container .tabContenido {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+}
+
+input {
+    margin: 20px 0px;
+}
+
+#ubicacion {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.guia {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+.activo {
+    opacity: 1;
+}
+
+#error {
+    text-align: center;
+    color: red;
+}
+
+li {
+    background-color: #fff;
+    margin-top: 10px;
+}

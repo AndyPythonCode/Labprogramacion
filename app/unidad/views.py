@@ -22,3 +22,6 @@ def menuDinamico(request):
 
 def codigoQR(request):
     return render(request, "codigoQR.html")
+
+def formularioTabs(request):
+    return render(request, "multi-tabs.html")
