@@ -12,4 +12,5 @@ urlpatterns = [
     path('menu/',views.menuDinamico, name="menu"),
     path('codigoQR', views.codigoQR, name="qr"),
     path('tabs/',views.formularioTabs, name="tabs"),
+    path('grafico/',views.grafico, name='grafico'),
 ]

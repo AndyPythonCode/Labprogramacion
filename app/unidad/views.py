@@ -25,3 +25,6 @@ def codigoQR(request):
 
 def formularioTabs(request):
     return render(request, "multi-tabs.html")
+
+def grafico(request):
+    return render(request,'grafico.html')

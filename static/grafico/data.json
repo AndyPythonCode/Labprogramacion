@@ -1,0 +1,22 @@
+{
+    "República Dominicana": {
+        "poblacion":"10266000",
+        "backGround": "#800080"
+    },
+    "Haití": {
+        "poblacion":"11402528",
+        "backGround": "#FF0000"
+    },
+    "Jamaica":{
+        "poblacion":"2961167",
+        "backGround": "#00FFFF"
+    },
+    "Puerto Rico":{
+        "poblacion":"2829350",
+        "backGround": "#00FF00"
+    },
+    "Cuba":{
+        "poblacion":"11326616",
+        "backGround": "#FFFF00"
+    }
+}
