@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Iniciar sesión</h2>
-    <form method="POST"> {% csrf_token %}
-    {{form.as_p}}
-    <button>Login</button>
+    <h2>Registrar usuario</h2>
+    <form method='POST'>
+        {{form.as_p}}
+        {% csrf_token %}
+        <button>Registrar</button>
     </form>
-    
     <hr>
-    <a href="{% url 'final:registrar' %}">Registrar usuario</a>
+    <a href="{% url 'final:login' %}"></a>
 </body>
 </html>
