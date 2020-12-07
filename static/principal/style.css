@@ -1,0 +1,9 @@
+table tr th a.btn:active{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+table tr th a.btn{
+    cursor: not-allowed;
+    opacity: 0.5;
+}

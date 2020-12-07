@@ -2,6 +2,20 @@
 
 {% load static %}
 
+{% block head%}
+    {% if not request.user.is_superuser%}
+        <link rel="stylesheet" href="{% static 'principal/style.css' %}">
+    {% endif %}
+{% endblock %}
+
+{% block script %}
+    {% if not request.user.is_superuser%}
+        <script src="{% static 'principal/script.js' %}"></script>
+    {% else %}
+        <script src="{% static 'principal/scriptAdmin.js' %}"></script>
+    {% endif %}
+{% endblock %}
+
 {% block contenido %}
     <tr>
         <th><a target="_blank" href="https://drive.google.com/file/d/1ax5idvWxUNj6VEhz0Ail79w8tMQ1PCyr/view?usp=sharing">Opinion acerca de las imagenes</a></th>

@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
   <link rel="shortcut icon" href="{% static 'principal/logo.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'base/style.css' %}">
   {% block head %} {% endblock %}
 </head>
 <body class="hold-transition sidebar-mini sidebar-collapse">
@@ -52,9 +53,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container">
-          <h1 class='text-center display-3'>Portafolio</h1>
+          <h1 id="miTitulo">Portafolio</h1>
           <div class="row">
-            <div class="col"><h5>Bienvenido <b>{{request.user.username}}</b></h5></div>
+            <div class="col"><h6 class="text-success">Bienvenido usuario: <b>{{request.user.username}}</b></h6></div>
             <div class="col text-right"><a href="{% url 'final:logout' %}">Cerrar sesión</a></div>          
           </div>
       </div><!-- /.container-fluid -->
@@ -69,10 +70,10 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <table class='table table-borderless'>
-                  <tr class="text-indigo">
-                      <td >Ver</td>
-                      <td>Descargar</td>
+              <table class='table table-borderless text-center'>
+                  <tr class="text-black">
+                      <td ><b>Listado de las Practicas Realizadas</b></td>
+                      <td><b>Descargar</b></td>
                   </tr>
                       {% block contenido %}
                         <!--Contenido cambiante-->
