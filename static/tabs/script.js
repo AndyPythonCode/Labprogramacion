@@ -7,7 +7,6 @@ Cuando añades, te muestra abajo en la tabla y se guarda en el localStorage (Si 
 Ojo: Tienes una imagen del mismo (Prueba.png).
 */
 
-
 const seccion = document.querySelectorAll(".container .tabOpcion button");//Se selecciona todos los titulos 
 const contenido = document.querySelectorAll(".container .tabContenido");//Se selecciona todos los contenido
 const form = document.getElementById("formulario");
@@ -115,7 +114,6 @@ function mostrarDatos(){
     internado: string_Html(document.querySelectorAll("[id^='lista-dinamica-3'] li"))
   };
   guardar(persona);
-  verLocalStorage();
   return persona;
 }
 
@@ -166,3 +164,5 @@ function verLocalStorage(){
       }
     }
 }
+verLocalStorage();
+mostrarTab(0);
