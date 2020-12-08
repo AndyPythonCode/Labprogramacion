@@ -7,3 +7,11 @@ table tr th a.btn{
     cursor: not-allowed;
     opacity: 0.5;
 }
+
+#panel:active {
+    pointer-events: none;
+}
+
+#panel {
+    cursor:not-allowed;
+}

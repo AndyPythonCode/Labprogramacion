@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     #apps
     'app.unidad',
     'app.final',
+    'app.rest_api_cedula',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -110,3 +112,4 @@ STATICFILES_DIRS = (
     Path.joinpath(BASE_DIR, 'static'),
 )
 
+LOGIN_URL = '/'

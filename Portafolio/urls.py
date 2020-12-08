@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('app.unidad.urls','unidad'))),
     path('', include(('app.final.urls','final'))),
+    path('api/',include(('app.rest_api_cedula.urls','api'))),
 ]

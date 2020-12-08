@@ -55,8 +55,9 @@
       <div class="container">
           <h1 id="miTitulo">Portafolio</h1>
           <div class="row">
-            <div class="col"><h6 class="text-success">Bienvenido usuario: <b>{{request.user.username}}</b></h6></div>
-            <div class="col text-right"><a href="{% url 'final:logout' %}">Cerrar sesión</a></div>          
+            <div class="col-3 text-success"><h6>Bienvenido usuario: <b>{{request.user.username}}</b></h6></div>
+            <div class="col-6 text-center"><a id="panel" target="_blank" href="/admin/auth/user/">Panel De Control Para Administradores</a></div>
+            <div class="col-3 text-right"><a href="{% url 'final:logout' %}">Cerrar sesión</a></div>          
           </div>
       </div><!-- /.container-fluid -->
     </section>
