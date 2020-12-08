@@ -34,9 +34,11 @@ INSTALLED_APPS = [
     'app.final',
     'app.rest_api_cedula',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -46,6 +48,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+#Esto permite solicitudes en el navegador a su aplicación Django desde otros orígenes.
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'Portafolio.urls'
 
