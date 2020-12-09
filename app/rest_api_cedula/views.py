@@ -6,6 +6,9 @@ from .serializer import Cedula
 class AndyArciniegaRest(APIView):
     """
     Los serializadores son unos de los componentes más poderosos que tiene Django Rest Framework. Estos permiten que estructuras complejas y modelos de nuestro proyecto en Django sean convertidos a estructuras nativas de Python y puedan ser convertidas fácilmente en JSON o XML. 
+    
+    ¿Quieres hacer una prueba?
+    Solo ve a donde dice DNI, coloca tu cedula, dale a POST y verás la data generada, si deseas ver como la consumi solo tienes que ir al menu principal y descargar el archivo de REST API CEDULA, verás como hice la respectiva llamada con FETCH con el lenguaje de javascript.
     """
     serializer_class = Cedula
     cedula_validada = False
