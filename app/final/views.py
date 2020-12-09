@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import authenticate, logout as do_logout, login as do_login
+from . import forms
 
 # Create your views here.
 def login(request):
@@ -12,7 +13,6 @@ def login(request):
             password = form.cleaned_data['password']
             
             user = authenticate(username=username, password=password)
-            
             if user is not None:
                 do_login(request, user)
                 return redirect('/')
@@ -26,9 +26,9 @@ def bienvenido(request):
     return redirect('/login')
 
 def registrar(request):
-    form = UserCreationForm()
+    form = forms.Formulario()
     if request.method == 'POST':
-        form = UserCreationForm(data=request.POST)
+        form = forms.Formulario(data=request.POST)
         if form.is_valid():
             user = form.save()
             if user is not None:

@@ -10,4 +10,5 @@ urlpatterns = [
     path('codigoQR', views.codigoQR, name="qr"),
     path('tabs/',views.formularioTabs, name="tabs"),
     path('grafico/',views.grafico, name='grafico'),
+    path('web_service/validar',views.rest_api, name='web_servicie'),
 ]
