@@ -1,0 +1,40 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Services Cedula</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-5 text-center">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="form-group">
+                    <label for="dni" class="text-success text-bold"><h3>Cedula Servicio Web</h3></label>
+                    <input type="text" class="form-control" id="dni" placeholder="Cedula Dominicana">
+                </div>
+                <button id="btn" type="text" class="btn btn-primary">Enviar</button>
+
+
+                <div class="card mt-5">
+                    <div class="card-header text-success">
+                      Salida
+                    </div>
+                    <div class="card-body">
+                        <b>Cedula</b><p id="mensajeDni">En espera...</p>
+                        <b>Mensaje</b><p id="mensajeSalida">En espera...</p>
+                        <b>Validación</b><p id="mensajeValida">En espera...</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'rest_api/script.js' %}"></script>
+</body>
+
+</html>

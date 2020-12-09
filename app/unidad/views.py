@@ -33,3 +33,7 @@ def formularioTabs(request):
 @login_required
 def grafico(request):
     return render(request,'grafico.html')
+
+@login_required
+def rest_api(request):
+    return render(request, 'api.html')
